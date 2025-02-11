@@ -1,0 +1,24 @@
+
+.filler{
+    width:1000px;
+    margin: 0 auto;
+    border: 50px soild blue;
+    padding:50px;
+    background-color: white;
+}
+
+.nav{
+    list-style: lower-roman;
+    text-align: center;
+    color: white;
+}
+.photos{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.file{ 
+    font-size: xx-large;
+     color: white; 
+     text-align: center
+}

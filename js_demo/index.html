@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Js Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/Javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>welcome to hogwarts</h1>
+    <h2>what house do you want?</h2>
+    <p><a href="https://harrypotter.fandom.com/wiki/Ravenclaw" target="_blank" onclick="alert('Warning!\n This choice is permanent')">ravenclaw</a></p>
+    <p><a href="https://www.slitherine.com/" target="_blank" onclick="alert">Sliterian</a></p>
+    <p><a href="https://harrypotter.fandom.com/wiki/Hufflepuff" target="_blank" onclick="alert('')">HufflePuff</a></p>
+    <p><a href="https://harrypotter.fandom.com/wiki/Gryffindor">Griffindoor</a></p>
+
+    <h2>Slove this</h2>
+    <p>What is 5 + 6?</p>
+    <button onclick="document.getElementById('add').innerHTML=5+6">Click here for answer</button>
+    <p id="add"></p>
+
+    <h2>What time is it?</h2>
+    <button onclick="document.getElementById('date').innerHTML=Datet('3rd')">Click here for the day</button>
+    <p id="Date"></p>
+
+    <h2>filler</h2>
+    <button onclick="document.getElementById('change-text'). innerHTML='filler filler'">filler</button>
+    <p id="change-text">filler</p>
+
+    <h2>funtion</h2>
+    <p>function</p>
+    <button onclick="pFun(  )">click me</button>
+    <p id="p-fun"></p>
+
+    <h2>return data</h2>
+    <button onclick="ackname()"> click here to enter name</button>
+    <p id="ask-name"></p>
+
+    <h2>how do we ask question with js?</h2>
+    <button onclick="askQuestion()">Click here for question</button>
+    <p id="question"></p>
+
+    <script>
+        //alert('lumos');
+        //alert(' Hello i see you welcome to hogwarts')
+        //alert('filler')
+
+        function askName() {
+            var nameReturn=documant.getElementById('ask-name');
+            var name = prompt('PLease enter your name' , 'HERE')
+            if (name=='') {
+                alert('Please try agian')
+            } else{
+                nameReturn.innerHTML = 'Hello' + name + '! nice to meet you!';
+            }
+
+        }
+
+        function pFun()  {
+            var p=document. getElementById('p-fun');
+            p.innerHTML='used Function'
+            p.style.coler='red'
+            p.style.fontStyle='30px'
+            p.style.textAlign='center'
+        }
+    </script>
+</body>
+</html>
